@@ -28,6 +28,13 @@ class FTPClient
 
   end
 
+  def closeConnection(ftp)
+    unless ftp.closed?
+      ftp.close()
+    end
+
+  end
+
 end
 
 
